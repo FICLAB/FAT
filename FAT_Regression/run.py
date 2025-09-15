@@ -1,6 +1,6 @@
 import argparse
 import torch
-from exp.exp_fresim import Exp_fresim
+from exp.exp_fat import Exp_fat
 import random
 import numpy as np
 import os
@@ -126,7 +126,7 @@ if args.use_gpu and args.use_multi_gpu:
 print('Args in experiment:')
 print(args)
 
-Exp = Exp_fresim
+Exp = Exp_fat
 
 if args.task_name == 'pretrain':
     for ii in range(args.itr):
