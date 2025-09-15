@@ -17,9 +17,9 @@ from tensorboardX import SummaryWriter
 warnings.filterwarnings('ignore')
 
 
-class Exp_fresim(Exp_Basic):
+class Exp_fat(Exp_Basic):
     def __init__(self, args):
-        super(Exp_fresim, self).__init__(args)
+        super(Exp_fat, self).__init__(args)
         self.writer = SummaryWriter(f"./outputs/logs/{args.data}/{args.model}/{args.pretrain_mode}")
 
     def _build_model(self):
